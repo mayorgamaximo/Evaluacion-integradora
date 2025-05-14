@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0f2f7;
+}
+
+/*.container da estilo al contenedor que tiene dentro toda la calculadora*/
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #1e88e5;
+}
+
+/*.calculator da estilo al fondo de la calculadora y contiene los botones y el display*/
+.calculator {
+  margin-top: 30px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  padding: 15px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*.display es el contenedor de los numeros ingresados y resultados*/
+.display {
+  margin-bottom: 8px;
+}
+
+.display input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.8em;
+  text-align: right;
+  border: none;
+  border-radius: 3px;
+}
+
+/*.buttons es el contenedor de todas las teclas de la calculadora*/
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+}
+
+/*button Da estilo a los botones por separado*/
+button {
+  padding: 8px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #1e88e5;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*cambia el color al pasar el cursos por encima*/
+button:hover {
+  background-color: #1565c0;
+}
+
+/*button:active da una pequeña transicion al hacer click en el boton*/
+button:active {
+  transform: translateY(1px);
+}
+
+/*button:nth-child(17) Da estilo al button numero 17 del html*/
+button:nth-child(21) {
+  background-color: #00acc1;
+  color: #fff;
+}
+
+/*button:nth-child(17), button:nth-child(18),button:nth-child(19),button:nth-child(20) da estilo a los botones 17, 18, 19 y 20 del html*/
+button:nth-child(17),
+button:nth-child(18),
+button:nth-child(19),
+button:nth-child(20) {
+  background-color: #ffb300;
+  color: #fff;
+}
