@@ -10,7 +10,7 @@ function calculate(value) {
     }
   } else if (value === "%") {
     try {
-      result.value = eval(result.value + "/100"); // Divide el valor por 100 para calcular el
+      result.value = eval(result.value + "/100"); // Divide el valor por 100 para calcular el promedio y mostrarlo en el display
     } catch (error) {
       result.value = "Error";
     }
